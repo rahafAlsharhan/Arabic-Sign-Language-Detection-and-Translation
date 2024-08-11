@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="yasmin.css" />
+
+    <style>
+
+
+    </style>
+
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <button id="englishKeyboardBtn" style="position: fixed; top: 150px; right: 50px; padding: 40px 40px; background-color: #CFE7EB; border: 2px #CFE7EB; color: #fff; font-size: 24px; border-radius: 30px;"> English keyboard</button>
+<br>
+    <div class="keyboard_wrapper">
+        <pre class="display"></pre>
+        <div class="key">
+            <div class="row">
+                <span data-key="ا">ا</span>
+                <span data-key="ب">ب</span>
+                <span data-key="ت">ت</span>
+                <span data-key="ث">ث</span>
+                <span data-key="ج">ج</span>
+                <span data-key="ح">ح</span>
+                <span data-key="خ">خ</span>
+                <span data-key="د">د</span>
+                <span data-key="ذ">ذ</span>
+                <span data-key="ر">ر</span>
+            </div>
+    
+            <div class="row">
+                <span data-key="ز">ز</span>
+                <span data-key="س">س</span>
+                <span data-key="ش">ش</span>
+                <span data-key="ص">ص</span>
+                <span data-key="ض">ض</span>
+                <span data-key="ط">ط</span>
+                <span data-key="ظ">ظ</span>
+                <span data-key="ع">غ</span>
+                <span data-key="ف">ف</span>
+            </div>
+    
+            <div class="row">
+                <span class="caps"></span>
+                <span data-key="ق">ق</span>
+                <span data-key="ك">ك</span>
+                <span data-key="ل">ل</span>
+                <span data-key="م">م</span>
+                <span data-key="ن">ن</span>
+                <span data-key="ه">هـ</span>
+                <span data-key="و">و</span>
+                <span data-key="ي">ي</span>
+                <span class="backspace">
+                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-close"></i>
+                </span>
+            </div>
+    
+            <div class="row">
+                <span class="space" data-key=" ">
+                    مــســافــة
+                </span> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('englishKeyboardBtn').addEventListener('click', function() {
+    window.location.href = 'E_keyboard.html';
+    });
+    </script>
+    
+    <script src="app.js"></script>
+    <header class="header">
+        <nav class="navbar">
+          <img src="img/logo.png" class="img">
+          <h4 class="logo"><a href="#"> <div class="center">EasyCommunication </div></a></h4>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" id="hamburger-btn">
+            <!-- Add your SVG code here -->
+          </label>
+          <ul class="links">
+            <li><a href="homepage.html">Home</a></li>
+          <li><a href="keyboard.html">keyboard</a></li>
+          <li><a href="img.html">voice command </a></li>
+          <li><a href="sign.html">sign language</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+</body>
+</html>

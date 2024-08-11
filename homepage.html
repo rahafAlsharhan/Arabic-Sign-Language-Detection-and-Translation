@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Home Page -->
+<html lang="en" class="image-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="yasmin.css" />
+    <link rel="stylesheet" href="style2.css">
+   
+    
+    <style>
+      .image-container {
+        margin: 20px; /* Adjust the margin as needed */
+      }
+
+      .image-container img {
+        width: 100%; /* Make the image fill the container */
+        height: 350px; /* Set a specific height for the image */
+        padding-top: 8%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img src="img/logo.png" class="img">
+        <h4 class="logo"><a href="#"> <div class="center">EasyCommunication </div></a></h4>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <!-- Add your SVG code here -->
+        </label>
+        <ul class="links">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="keyboard.html">keyboard</a></li>
+          <li><a href="img.html">voice command </a></li>
+          <li><a href="sign.html">sign language</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Image after navigation bar -->
+    <div class="image-container">
+        <img src="img/hospital2.png" alt="Description of the image">
+    </div>
+
+    <div class="card-list">
+      <a href="img.html" class="card-item">
+          <img src="img/developer.jpg" alt="Card Image">
+          <h2>Simple Voice Commands</h2>
+          <h3>By clicking on pictures representing
+            some basic command, you will hear 
+            the command in voice form.</h3>
+      </a>
+      <a href="keyboard.html" class="card-item">
+          <img src="img/designer.jpg" alt="Card Image">
+          <h2>Writing on Keyboard</h2>
+          <h3>By clicking on the keys, users can write
+           on the keyboard by using eye tracking, or
+           can be used by clicking on the keys by
+           hands. </h3>
+      </a>
+      <a href="sign.html" class="card-item">
+          <img src="img/editor.jpg" alt="Card Image">
+          <h2> Sign Language Detection </h2>
+          <h3> By performing sign language in front of the camera, it will be converted into  
+             textual form.</h3>
+      </a>
+    </div>
+
+    <script>
+      // JavaScript to open "sign.html" when clicking on cards
+      document.querySelectorAll('.card-item').forEach(function(card) {
+        card.addEventListener('click', function() {
+          window.location.href = card.getAttribute('href');
+        });
+      });
+    </script>
+
+  </body>
+</html>

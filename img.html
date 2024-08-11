@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="yasmin.css" />
+    <link rel="stylesheet" href="style2.css">
+  <style>
+
+    .scroll-container {
+      position: relative;
+      margin: 0 auto;
+      margin-top: 150px;
+      max-width: 700px;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    /* CSS styles for the slideshow images */
+    .slideshow-image {
+      display: none;
+      width: 200px;
+      height: 270px;
+      cursor: pointer; /* Add cursor pointer to indicate clickable images */
+      transition: transform 0.3s ease; /* Add transition for smooth scaling */
+      border: 1px solid black;
+      border-radius: 10%;
+      padding: 5px;
+      margin-right: 28px;
+      margin-left: 28px;
+      box-shadow: 10px 15px 10px #888888;
+    }
+
+    .slideshow-image:hover {
+      transform: scale(1.3); /* Increase scale on hover */
+    }
+
+    /* CSS styles for the arrow controls */
+    .prev, .next {
+    cursor: pointer;
+      position: fixed;
+      top: 60%;
+      width: auto;
+      padding: 140px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      transform: translateY(-50%);
+    }
+
+    /* CSS styles for the previous arrow */
+    .prev {
+      left: 0;
+      top: 300px;
+      color: #CFE7EB;
+      font-size: 60px;
+    }
+
+    /* CSS styles for the next arrow */
+    .next {
+      right: 0;
+      top: 300px;
+      color: #CFE7EB;
+      font-size: 60px;
+      border-radius: 4px 0 0 3px;
+    }
+
+    .slide-paragraph {
+      margin-top: 50px;
+      font-size: 20px;
+
+    }
+
+    .slide-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+<header class="header">
+      <nav class="navbar">
+        <img src="img/logo.png" class="img">
+        <h4 class="logo"><a href="#"> <div class="center">EasyCommunication </div></a></h4>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <!-- Add your SVG code here -->
+        </label>
+        <ul class="links">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="keyboard.html">keyboard</a></li>
+          <li><a href="img.html">voice command </a></li>
+          <li><a href="sign.html">sign language</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="scroll-container">
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/hello.png" onclick="playAudio(0)" >
+      <p class="slide-paragraph">Hello.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/yes.png" onclick="playAudio(1)">
+      <p class="slide-paragraph">Yes.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/no.png" onclick="playAudio(2)">
+      <p class="slide-paragraph">No.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/shower.png" onclick="playAudio(3)">
+      <p class="slide-paragraph">I need to take a shower.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/water.png" onclick="playAudio(4)">
+      <p class="slide-paragraph">I need water.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/teeth.png" onclick="playAudio(5)">
+      <p class="slide-paragraph">I want to brush my teeth.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/medicine.png" onclick="playAudio(6)">
+      <p class="slide-paragraph">I want my medicine.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/hungry.png" onclick="playAudio(7)">
+      <p class="slide-paragraph">I am hungry.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/pain.png" onclick="playAudio(8)">
+      <p class="slide-paragraph">I feel pain.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/help.png" onclick="playAudio(9)">
+      <p class="slide-paragraph">I need help.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/sleep.png" onclick="playAudio(10)">
+      <p class="slide-paragraph">I want to sleep.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/call.png" onclick="playAudio(11)">
+      <p class="slide-paragraph">Call my parents.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/open.png" onclick="playAudio(12)">
+      <p class="slide-paragraph">Open the curtain.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/close.png" onclick="playAudio(13)">
+      <p class="slide-paragraph">Close the curtain.</p>
+    </div>
+
+    <div class="slide-container">
+      <img class="slideshow-image" src="img/restroom.png" onclick="playAudio(14)">
+      <p class="slide-paragraph">I neeed to use the restroom.</p>
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    <audio id="audio" controls style="display: none;"></audio> <!-- Hidden audio element -->
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    var audio = document.getElementById("audio");
+
+    // Define the image and audio information
+    var slideData = [
+      { image: "img/hello.png", audio: "audio/hello.wav", paragraph: "Hello." },
+      { image: "img/yes.png", audio: "audio/yes.wav", paragraph: "Yes." },
+      { image: "img/no.png", audio: "audio/no.wav", paragraph: "No." },
+      { image: "img/shower.png" , audio: "audio/i need to take a shower.wav", paragraph: "I need to take a shower." },
+      { image: "img/water.png", audio: "audio/i need water.wav", paragraph: "I need water." },
+      { image: "img/teeth.png", audio: "audio/i want to brush my teeth.wav", paragraph: "I want to brush my teeth." },
+      { image: "img/medicine.png", audio: "audio/i want my medicine.wav", paragraph: "I want my medicine." },
+      { image: "img/hungry.png", audio: "audio/i am hungry.wav", paragraph: "I am hungry." },
+      { image: "img/pain.png", audio: "audio/i feel pain.wav", paragraph: "I feel pain." },
+      { image: "img/help.png", audio: "audio/i need help.wav", paragraph: "I need help." },
+      { image: "img/sleep.png", audio: "audio/i want to sleep.wav", paragraph: "I want to sleep." },
+      { image: "img/call.png", audio: "audio/call my parents.wav", paragraph: "Call my parents." },
+      { image: "img/open.png", audio: "audio/open the curtain.wav", paragraph: "Open the curtain." },
+      { image: "img/close.png", audio: "audio/close the curtain.wav", paragraph: "Close the curtain." },
+      { image: "img/restroom.png", audio: "audio/i need to use the restroom.wav", paragraph: "I need to use the restroom." }
+    ];
+
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+
+    }
+
+    function showSlide(n) {
+    var slides = document.getElementsByClassName("slideshow-image");
+    var paragraphs = document.getElementsByClassName("slide-paragraph");
+
+
+      if (n >= slides.length) {
+        slideIndex = 0;
+      }
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        paragraphs[i].style.display = "none";
+      }
+
+      for (var j = slideIndex; j < slideIndex + 3; j++) {
+        if (slides[j]) {
+          slides[j].style.display = "block";
+          paragraphs[j].style.display = "block";
+        }
+      }
+    }
+
+    function playAudio(index) {
+      audio.src = slideData[index].audio;
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
